@@ -1,21 +1,16 @@
 # Cards
 
-**TODO: Add description**
+## compile project and make it available in a shell
+iex -S mix
 
-## Installation
+akira:elixir-cards rus$ iex -S mix
+Erlang/OTP 21 [erts-10.1.1] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [hipe] [dtrace]
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `cards` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:cards, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/cards](https://hexdocs.pm/cards).
-
+Compiling 1 file (.ex)
+Generated cards app
+Interactive Elixir (1.7.4) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> Cards
+Cards
+iex(2)> Cards.hello
+"hello world!"
+iex(3)>
