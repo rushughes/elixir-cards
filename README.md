@@ -16,3 +16,6 @@ Elixir tutorial from <https://www.udemy.com/the-complete-elixir-and-phoenix-boot
     iex(2)> Cards.hello
     "hello world!"
     iex(3)>
+
+## compile project in the shell
+`compile`
