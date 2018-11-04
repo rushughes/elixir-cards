@@ -19,3 +19,19 @@ Elixir tutorial from <https://www.udemy.com/the-complete-elixir-and-phoenix-boot
 
 ## compile project in the shell
 `compile`
+
+## examples
+    iex(11)> deck = Cards.create_deck
+    ["Ace", "Two", "Three"]
+    iex(12)> deck2 = Cards.shuffle(deck)
+    ["Ace", "Three", "Two"]
+    iex(13)> deck2
+    ["Ace", "Three", "Two"]
+    iex(14)> deck
+    ["Ace", "Two", "Three"]
+
+
+    iex(1)> deck = Cards.create_deck
+    ["Ace", "Two", "Three"]
+    iex(2)> Cards.contains?(deck, "King")
+    false
