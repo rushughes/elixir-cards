@@ -1,7 +1,7 @@
 # Cards
 
 ## compile project and make it available in a shell
-  iex -S mix
+`iex -S mix`
 
     akira:elixir-cards rus$ iex -S mix
     Erlang/OTP 21 [erts-10.1.1] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [hipe] [dtrace]
