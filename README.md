@@ -35,3 +35,34 @@ Elixir tutorial from <https://www.udemy.com/the-complete-elixir-and-phoenix-boot
     ["Ace", "Two", "Three"]
     iex(2)> Cards.contains?(deck, "King")
     false
+
+    iex(40)> {hand, deck} = Cards.deal(deck, 20)
+    {["Four of Diamonds", "Three of Diamonds", "Ace of Spades", "Two of Diamonds",
+      "Jack of Diamonds", "Jack of Hearts", "Seven of Clubs", "King of Clubs",
+      "Three of Hearts", "King of Hearts", "Two of Clubs", "Nine of Spades",
+      "Eight of Diamonds", "Six of Hearts", "Queen of Diamonds", "Five of Spades",
+      "Seven of Hearts", "Six of Spades", "Seven of Spades", "Five of Diamonds"],
+     ["Eight of Clubs", "Three of Clubs", "Nine of Diamonds", "Nine of Hearts",
+      "King of Spades", "Three of Spades", "Ace of Hearts", "Ace of Clubs",
+      "Two of Spades", "Queen of Spades", "Two of Hearts", "Nine of Clubs",
+      "Jack of Spades", "Jack of Clubs", "Four of Hearts", "Queen of Clubs",
+      "Ten of Hearts", "Ten of Clubs", "King of Diamonds", "Ten of Spades",
+      "Four of Spades", "Eight of Spades", "Ten of Diamonds", "Seven of Diamonds",
+      "Ace of Diamonds", "Six of Clubs", "Queen of Hearts", "Six of Diamonds",
+      "Five of Clubs", "Eight of Hearts", "Four of Clubs", "Five of Hearts"]}
+    iex(41)> hand
+    ["Four of Diamonds", "Three of Diamonds", "Ace of Spades", "Two of Diamonds",
+     "Jack of Diamonds", "Jack of Hearts", "Seven of Clubs", "King of Clubs",
+     "Three of Hearts", "King of Hearts", "Two of Clubs", "Nine of Spades",
+     "Eight of Diamonds", "Six of Hearts", "Queen of Diamonds", "Five of Spades",
+     "Seven of Hearts", "Six of Spades", "Seven of Spades", "Five of Diamonds"]
+    iex(42)> deck
+    ["Eight of Clubs", "Three of Clubs", "Nine of Diamonds", "Nine of Hearts",
+     "King of Spades", "Three of Spades", "Ace of Hearts", "Ace of Clubs",
+     "Two of Spades", "Queen of Spades", "Two of Hearts", "Nine of Clubs",
+     "Jack of Spades", "Jack of Clubs", "Four of Hearts", "Queen of Clubs",
+     "Ten of Hearts", "Ten of Clubs", "King of Diamonds", "Ten of Spades",
+     "Four of Spades", "Eight of Spades", "Ten of Diamonds", "Seven of Diamonds",
+     "Ace of Diamonds", "Six of Clubs", "Queen of Hearts", "Six of Diamonds",
+     "Five of Clubs", "Eight of Hearts", "Four of Clubs", "Five of Hearts"]
+    iex(43)>
