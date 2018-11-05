@@ -20,6 +20,27 @@ Elixir tutorial from <https://www.udemy.com/the-complete-elixir-and-phoenix-boot
 ## compile project in the shell
 `compile`
 
+## installing packages
+`mix deps.get`
+
+    akira:elixir-cards rus$ mix deps.get
+    Could not find Hex, which is needed to build dependency :ex_doc
+    Shall I install Hex? (if running non-interactively, use "mix local.hex --force") [Yn] y
+    * creating /Users/rus/.mix/archives/hex-0.18.1
+    Resolving Hex dependencies...
+    Dependency resolution completed:
+    New:
+      earmark 1.2.6
+      ex_doc 0.19.1
+      makeup 0.5.5
+      makeup_elixir 0.10.0
+      nimble_parsec 0.4.0
+    * Getting ex_doc (Hex package)
+    * Getting earmark (Hex package)
+    * Getting makeup_elixir (Hex package)
+    * Getting makeup (Hex package)
+    * Getting nimble_parsec (Hex package)
+
 ## examples
     iex(11)> deck = Cards.create_deck
     ["Ace", "Two", "Three"]
