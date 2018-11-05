@@ -44,7 +44,8 @@ Elixir tutorial from <https://www.udemy.com/the-complete-elixir-and-phoenix-boot
 ## generate docs
 `mix docs`
 
-
+## run tests
+`mix tests`
 
 ## examples
     iex(11)> deck = Cards.create_deck
