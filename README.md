@@ -41,6 +41,11 @@ Elixir tutorial from <https://www.udemy.com/the-complete-elixir-and-phoenix-boot
     * Getting makeup (Hex package)
     * Getting nimble_parsec (Hex package)
 
+## generate docs
+`mix docs`
+
+
+
 ## examples
     iex(11)> deck = Cards.create_deck
     ["Ace", "Two", "Three"]
