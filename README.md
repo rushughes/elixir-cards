@@ -197,3 +197,11 @@ iex(8)>
     ** (SyntaxError) iex:12: unexpected token: "$" (column 1, codepoint U+0024)
     iex(12)> Map.put(colors, :thirdary, "green")
     %{primary: "red", secondary: "blue", thirdary: "green"}
+
+    # lists
+    iex(1)> colors = [{:primary, "red"}, {:secondary, "green"}]
+    [primary: "red", secondary: "green"]
+    iex(2)> colors[:primary]
+    "red"
+    iex(3)> colors[:secondary]
+    "green"
