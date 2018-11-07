@@ -95,8 +95,8 @@ Elixir tutorial from <https://www.udemy.com/the-complete-elixir-and-phoenix-boot
     iex(43)>
 
     iex(2)> deck = Cards.create_deck
-["Ace of Spades", "Two of Spades", "Three of Spades", "Four of Spades",
- "Five of Spades", "Six of Spades", "Seven of Spades", "Eight of Spades",
+    ["Ace of Spades", "Two of Spades", "Three of Spades", "Four of Spades",
+     "Five of Spades", "Six of Spades", "Seven of Spades", "Eight of Spades",
  "Nine of Spades", "Ten of Spades", "Jack of Spades", "Queen of Spades",
  "King of Spades", "Ace of Clubs", "Two of Clubs", "Three of Clubs",
  "Four of Clubs", "Five of Clubs", "Six of Clubs", "Seven of Clubs",
@@ -167,3 +167,33 @@ iex(7)> deck2
  "Five of Spades", "Seven of Clubs", "Nine of Hearts", "Eight of Diamonds",
  "Five of Hearts", "Seven of Hearts", ...]
 iex(8)>
+
+## maps
+
+    {primary: "red", secondary: "blue"}
+    iex(2)> colors
+    %{primary: "red", secondary: "blue"}
+    iex(3)> colors.primary
+    "red"
+    iex(4)> colors.secondary
+    "blue"
+    iex(5)> sec_col = colors.secondary
+    "blue"
+    iex(6)> sec_col
+    "blue"
+    iex(7)> %{secondary: sec_color} = colors
+    %{primary: "red", secondary: "blue"}
+    iex(8)> sec_color
+    "blue"
+    iex(9)> colors.red = "orange"
+    ** (CompileError) iex:9: cannot invoke remote function colors.red/0 inside match
+    iex(9)> Map.put(colors, :primary, "orange")
+    %{primary: "orange", secondary: "blue"}
+    iex(10)> colors
+    %{primary: "red", secondary: "blue"}
+    iex(11)> %{ colors | primary: "orange" }
+    %{primary: "orange", secondary: "blue"}
+    iex(12)> $: colors | thirdary: "green" }
+    ** (SyntaxError) iex:12: unexpected token: "$" (column 1, codepoint U+0024)
+    iex(12)> Map.put(colors, :thirdary, "green")
+    %{primary: "red", secondary: "blue", thirdary: "green"}
